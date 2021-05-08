@@ -1,4 +1,11 @@
 # Cryptomojis
+```
+brew install ganache --cask
+yarn install
+truffle compile
+truffle migrate --reset
+yarn dev
+```
 
 # Emoji research:
 * Twitch: https://help.twitch.tv/s/article/emote-guidelines?language=en_US
@@ -34,3 +41,12 @@ ERC-721 Standard:
 
 Blockchain 101
 * https://andersbrownworth.com/blockchain/hash
+
+# NFT storage
+* https://stackoverflow.com/questions/67304320/does-chainlink-have-a-reliable-way-to-verify-the-size-format-of-a-file-behind-a
+  * https://blog.chain.link/build-and-use-external-adapters/
+* https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/
+* https://docs.ipfs.io/how-to/best-practices-for-nft-data/#types-of-ipfs-links-and-when-to-use-them
+* https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/
+* https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/
+* https://nft.storage/
