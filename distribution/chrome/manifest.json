@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Cryptomojis",
+  "version": "1.0",
+  "description": "View cryptomojis in your browser.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "storage",
+    "http://*/",
+    "https://*/"
+  ],
+  "web_accessible_resources": [
+    "js/cryptomojis.js"
+  ],
+  "background": {
+    "scripts": ["js/background.js", "js/hot-reload.js"]
+  },
+  "content_scripts": [{
+    "matches":    ["*://*/*"],
+    "js":         ["js/cryptomojis.js"],
+    "run_at": "document_end",
+    "all_frames": true
+  }],
+  "browser_action" : {
+    "default_icon" : "images/icon.png"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128":"images/icon.png"
+  }
+}
